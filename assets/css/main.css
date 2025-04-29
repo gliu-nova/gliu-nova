@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #1A1A1A, #1A1A1A);
-				background-image: -webkit-linear-gradient(to right, #1A1A1A, #1A1A1A);
-				background-image: -ms-linear-gradient(to right, #1A1A1A, #1A1A1A);
-				background-image: linear-gradient(to right, #1A1A1A, #1A1A1A);
+				background-image: -moz-linear-gradient(to right, #b2f2bb, #b2f2bb);
+				background-image: -webkit-linear-gradient(to right, #b2f2bb, #b2f2bb);
+				background-image: -ms-linear-gradient(to right, #b2f2bb, #b2f2bb);
+				background-image: linear-gradient(to right, #b2f2bb, #b2f2bb);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
