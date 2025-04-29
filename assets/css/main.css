@@ -2446,7 +2446,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #f0f0f0;
+			color: #FFD700;
 			content: '\f00c';
 		}
 
@@ -3239,33 +3239,33 @@ input, select, textarea {
 
 
 		.wrapper.alt {
-			background-color: #f0f0f0;
+			background-color: #FFD700;
 		}
 /* 		impacts background color of "ABOUT ME" */
 
 		.wrapper.style1 {
-			background-color: #f0f0f0;
+			background-color: #FFD700;
 		}
 /* 		impacts background color */
 
 		.wrapper.style1-alt {
-			background-color: #f0f0f0;
+			background-color: #FFD700;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #FFD700;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #FFD700;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #FFD700;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #FFD700;
 		}
 
 		.wrapper.fullscreen {
