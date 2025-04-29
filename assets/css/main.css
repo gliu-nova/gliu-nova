@@ -99,7 +99,7 @@ input, select, textarea {
 
 	body {
 		/* Might edit background when you scroll at edges. Doesn't impact main background */
-		background: #;
+		background: #FFD700;
 		
 	}
 
@@ -3244,7 +3244,7 @@ input, select, textarea {
 /* 		impacts background color of "ABOUT ME" */
 
 		.wrapper.style1 {
-			background-color: #FF6B6B;
+			background-color: #f0f0f0;
 		}
 /* 		impacts background color */
 
