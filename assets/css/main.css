@@ -2446,7 +2446,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #f5f1e6;
+			color: #f0f0f0;
 			content: '\f00c';
 		}
 
@@ -3241,11 +3241,11 @@ input, select, textarea {
 		.wrapper.alt {
 			background-color: #f0f0f0;
 		}
+/* 		impacts background color of "ABOUT ME" */
 
 		.wrapper.style1 {
-			background-color: #F5F7FA;
+			background-color: #FF6B6B;
 		}
-/* 		impacts background color of intro */
 
 		.wrapper.style1-alt {
 			background-color: #F5F7FA;
