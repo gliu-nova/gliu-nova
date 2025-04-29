@@ -2441,12 +2441,12 @@ input, select, textarea {
 				top: 0;
 				width: 2.0625em;
 			}
-		/* Might edit background when you scroll at edges. Doesn't affect main background */
+		/* Affects main background */
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b2f2bb;
+			color: #f5f1e6;
 			content: '\f00c';
 		}
 
