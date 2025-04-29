@@ -98,7 +98,9 @@ input, select, textarea {
 	}
 
 	body {
+		/* Might edit background when you scroll at edges. Doesn't impact main background */
 		background: #b2f2bb;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -195,7 +197,7 @@ input, select, textarea {
 			position: relative;
 			padding-bottom: 0.35em;
 		}
-
+			/* Might edit background when you scroll at edges. Doesn't impact main background */
 			h1.major:after {
 				background-image: -moz-linear-gradient(to right, #b2f2bb, #b2f2bb);
 				background-image: -webkit-linear-gradient(to right, #b2f2bb, #b2f2bb);
@@ -2439,7 +2441,7 @@ input, select, textarea {
 				top: 0;
 				width: 2.0625em;
 			}
-
+		/* Might edit background when you scroll at edges. Doesn't affect main background */
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
