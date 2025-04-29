@@ -3237,12 +3237,14 @@ input, select, textarea {
 
 			}
 
+
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #f0f0f0;
 		}
+/* 		impacts background color of intro */
 
 		.wrapper.style1 {
-			background-color: #b2f2bb;
+			background-color: #F5F7FA;
 		}
 
 		.wrapper.style1-alt {
