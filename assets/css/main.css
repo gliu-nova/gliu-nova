@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5em 0; /* Edit this for heading spacing */
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: inherit; /* Links in headings inherit heading color */
+	color: #f0f0f0; /* Links in headings inherit heading color */
 	text-decoration: none;
 }
 h1 { font-size: 2.75em; } /* Edit this to adjust h1 size */
@@ -888,19 +888,19 @@ input[type="radio"] + label:before {
 
 /* Sets placeholder text color across browsers */
 ::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.35) !important; /* Edit this for placeholder color */
+	color: rgba(60, 60, 60, 0.35) !important; /* Edit this for placeholder color */
 	opacity: 1.0;
 }
 :-moz-placeholder {
-	color: rgba(255, 255, 255, 0.35) !important;
+	color: rgba(60, 60, 60, 0.35) !important;
 	opacity: 1.0;
 }
 ::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.35) !important;
+	color: rgba(60, 60, 60, 0.35) !important;
 	opacity: 1.0;
 }
 :-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.35) !important;
+	color: rgba(60, 60, 60, 0.35) !important;
 	opacity: 1.0;
 }
 
@@ -1235,7 +1235,7 @@ section.special, article.special {
 
 /* Styles headers and paragraphs within sections */
 header p {
-	color: rgba(255, 255, 255, 0.35); /* Edit this for paragraph color */
+	color: rgba(60, 60, 60, 0.35); /* Edit this for paragraph color */
 	position: relative;
 	margin: 0 0 1.5em 0;
 }
