@@ -115,7 +115,7 @@ html {
 
 /* Sets the main background color of the page to gold (#FFD700) */
 body {
-	background: #FFD700; /* Edit this to change the overall page background */
+	background: #f9f9f9; /* Edit this to change the overall page background */
 }
 
 /* Disables animations and transitions during page preload for a smooth initial load */
@@ -214,10 +214,10 @@ h1.major {
 	padding-bottom: 0.35em;
 }
 h1.major:after {
-	background-image: -moz-linear-gradient(to right, #FFD700, #FFD700); /* Gold underline */
-	background-image: -webkit-linear-gradient(to right, #FFD700, #FFD700);
-	background-image: -ms-linear-gradient(to right, #FFD700, #FFD700);
-	background-image: linear-gradient(to right, #FFD700, #FFD700); /* Edit this to change underline color */
+	background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91); /* Gold underline */
+	background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+	background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+	background-image: linear-gradient(to right, #5e42a6, #b74e91); /* Edit this to change underline color */
 	-moz-transition: max-width 0.2s ease;
 	-webkit-transition: max-width 0.2s ease;
 	-ms-transition: max-width 0.2s ease;
