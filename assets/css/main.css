@@ -1,195 +1,83 @@
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* Simplified instructions to help you manage the Hyperspace template more easily */
 
-/* Reset and Basic Styles - Generally Keep This */
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body {
-	-webkit-text-size-adjust: none;
-}
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
+/* === COLORS TO EDIT === */
+
+/* Sidebar background (left panel) */
+#sidebar {
+  background: #312450; /* Change this to edit the left panel background */
 }
 
-/* Basic Page Setup - Keep This */
-	@-ms-viewport {
-		width: device-width;
-	}
-	body {
-		-ms-overflow-style: scrollbar;
-	}
-	@media screen and (max-width: 480px) {
-		html, body {
-			min-width: 320px;
-		}
-	}
-	html {
-		box-sizing: border-box;
-	}
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-	body {
-		/* This was the background color that looked off */
-		background: #FFD700; /* You can change the overall page background here */
-	}
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+/* Header background (top nav on some pages) */
+#header {
+  background-color: #5e42a6; /* Change this for the top nav color */
+}
 
-/* Typography - Controls Text Appearance */
-	body, input, select, textarea {
-		color: rgba(60, 60, 60, 0.55); /* Default text color */
-		font-family: Arial, Helvetica, sans-serif; /* Default font */
-		font-size: 16.5pt; /* Default font size */
-		font-weight: normal;
-		line-height: 1.75;
-	}
-		/* Responsive font sizes */
-		@media screen and (max-width: 1680px) {
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
-		}
-		@media screen and (max-width: 1280px) {
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-		}
-		@media screen and (max-width: 360px) {
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-		}
-	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35); /* Default link border color */
-		color: inherit; /* Link color is the same as default text */
-		text-decoration: none;
-	}
-		a:hover {
-			border-bottom-color: transparent;
-			color: #ffffff; /* Link hover color */
-		}
-	strong, b {
-		color: #ffffff; /* Bold text color */
-		font-weight: bold;
-	}
-	em, i {
-		font-style: italic;
-	}
-	p {
-		margin: 0 0 2em 0;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff; /* Heading color */
-		font-weight: bold;
-		line-height: 1.5;
-		margin: 0 0 0.5em 0;
-	}
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
-	h1 {
-		font-size: 2.75em;
-	}
-		h1.major {
-			margin: 0 0 1.3em 0;
-			position: relative;
-			padding-bottom: 0.35em;
-		}
-			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #FFD700, #FFD700); /* Underline color for major headings */
-				background-image: -webkit-linear-gradient(to right, #FFD700, #FFD700);
-				background-image: -ms-linear-gradient(to right, #FFD700, #FFD700);
-				background-image: linear-gradient(to right, #FFD700, #FFD700);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.05em;
-				position: absolute;
-				right: 0;
-				width: 100%;
-			}
-	h2 {
-		font-size: 1.75em;
-	}
-	h3 {
-		font-size: 1.1em;
-	}
-	h4 {
-		font-size: 1em;
-	}
-	h5 {
-		font-size: 0.8em;
-	}
-	h6 {
-		font-size: 0.6em;
-	}
-	@media screen and (max-width: 736px) {
-		h1 {
-			font-size
+/* Section background colors */
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3,
+.wrapper.alt,
+.wrapper.style1-alt,
+.wrapper.style2-alt,
+.wrapper.style3-alt {
+  background-color: #FFD700; /* You can change this to something more subtle */
+}
+
+/* Pink highlight gradient (you mentioned wanting to remove pink) */
+/* This gradient appears in sidebar underline animation */
+#sidebar nav a.active:after {
+  background-image: linear-gradient(to right, #5e42a6, #b74e91); /* Change #b74e91 (pink) to another color */
+}
+
+.wrapper.style3 .icon.major:before {
+  color: #b74e91; /* Pink icon highlight — change this if needed */
+}
+
+/* === MAIN FONT AND TEXT STYLES === */
+body, input, select, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(60, 60, 60, 0.55);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* === BUTTON STYLE === */
+.button {
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.button.primary {
+  background-color: #ffffff;
+  color: #312450 !important;
+}
+
+/* === SECTION SPACING === */
+.wrapper > .inner {
+  padding: 4em 4em 2em 4em;
+  max-width: 75em;
+}
+
+/* === SIDEBAR LINK COLORS === */
+#sidebar nav a {
+  color: rgba(255, 255, 255, 0.35);
+}
+#sidebar nav a.active {
+  color: #ffffff;
+}
+
+/* === BACKGROUND IMAGE SECTION (Landing page) === */
+#intro {
+  background-image: url("images/intro.svg");
+  background-size: cover;
+  background-position: top right;
+}
+
+/* === OPTIONAL: REMOVE ANIMATIONS === */
+body.is-preload * {
+  transition: none !important;
+  animation: none !important;
+}
