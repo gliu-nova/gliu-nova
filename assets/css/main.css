@@ -191,7 +191,7 @@ p {
 
 /* Styles headings (h1-h6): white, bold, with specific sizes and spacing */
 h1, h2, h3, h4, h5, h6 {
-	color: #ffffff; /* Edit this to change heading color */
+	color: #f0f0f0; /* Edit this to change heading color */
 	font-weight: bold;
 	line-height: 1.5;
 	margin: 0 0 0.5em 0; /* Edit this for heading spacing */
