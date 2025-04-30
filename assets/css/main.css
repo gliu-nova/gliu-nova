@@ -132,9 +132,11 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 /* Type */
 
-/* Sets default text styles for body and form elements: dark gray color, Arial font, 16.5pt size */
+/* Sets color of body text of all sections
+ */
+/* Sets default text styles for body and form elements: dark gray color, Arial font, 16.5pt size */ 
 body, input, select, textarea {
-	color: rgba(60, 60, 60, 0.55); /* Edit this to change default text color */
+	color: rgba(255, 255, 255, 0.75); /* Edit this to change default text color */
 	font-family: Arial, Helvetica, sans-serif; /* Edit this to change the font */
 	font-size: 16.5pt; /* Edit this to adjust base text size */
 	font-weight: normal;
