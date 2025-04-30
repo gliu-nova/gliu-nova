@@ -1,83 +1,161 @@
-/* Simplified instructions to help you manage the Hyperspace template more easily */
+/* Imports Font Awesome icons for use throughout the site (e.g., social media icons, checkboxes) */
+@import url(fontawesome-all.min.css);
 
-/* === COLORS TO EDIT === */
+/*
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-/* Sidebar background (left panel) */
-#sidebar {
-  background: #312450; /* Change this to edit the left panel background */
+/* 
+   Resets default styles for all listed elements to ensure consistency across browsers.
+   Removes margins, padding, borders, and sets font size to 100% with inherited font and baseline alignment.
+*/
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-/* Header background (top nav on some pages) */
-#header {
-  background-color: #5e42a6; /* Change this for the top nav color */
+/* Ensures HTML5 semantic elements are displayed as blocks for proper layout */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-/* Section background colors */
-.wrapper.style1,
-.wrapper.style2,
-.wrapper.style3,
-.wrapper.alt,
-.wrapper.style1-alt,
-.wrapper.style2-alt,
-.wrapper.style3-alt {
-  background-color: #FFD700; /* You can change this to something more subtle */
+/* Sets default line height to 1 for the body, removing extra spacing between lines */
+body {
+	line-height: 1;
 }
 
-/* Pink highlight gradient (you mentioned wanting to remove pink) */
-/* This gradient appears in sidebar underline animation */
-#sidebar nav a.active:after {
-  background-image: linear-gradient(to right, #5e42a6, #b74e91); /* Change #b74e91 (pink) to another color */
+/* Removes default list styling (bullets, numbers) from ordered and unordered lists */
+ol, ul {
+	list-style: none;
 }
 
-.wrapper.style3 .icon.major:before {
-  color: #b74e91; /* Pink icon highlight — change this if needed */
+/* Removes default quote marks from blockquotes and q elements */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
 }
 
-/* === MAIN FONT AND TEXT STYLES === */
+/* Collapses table borders and removes spacing between cells for a clean look */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Prevents text size adjustments on mobile devices for consistent typography */
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/* Ensures mark elements (highlights) have no background and inherit text color */
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* Removes inner border and padding from inputs in Firefox for a uniform appearance */
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/* Normalizes input, select, and textarea appearance across browsers, removing default styles */
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+/* Sets viewport width for IE to match device width, ensuring proper scaling */
+@-ms-viewport {
+	width: device-width;
+}
+
+/* Enables scrollbar in IE for overflow content */
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+/* Ensures a minimum width of 320px on small screens (e.g., mobile) for usability */
+@media screen and (max-width: 480px) {
+	html, body {
+		min-width: 320px;
+	}
+}
+
+/* Applies border-box sizing globally, making padding and borders part of element dimensions */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Sets the main background color of the page to gold (#FFD700) */
+body {
+	background: #FFD700; /* Edit this to change the overall page background */
+}
+
+/* Disables animations and transitions during page preload for a smooth initial load */
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+/* Type */
+
+/* Sets default text styles for body and form elements: dark gray color, Arial font, 16.5pt size */
 body, input, select, textarea {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(60, 60, 60, 0.55);
+	color: rgba(60, 60, 60, 0.55); /* Edit this to change default text color */
+	font-family: Arial, Helvetica, sans-serif; /* Edit this to change the font */
+	font-size: 16.5pt; /* Edit this to adjust base text size */
+	font-weight: normal;
+	line-height: 1.75; /* Controls spacing between lines */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-  font-weight: bold;
+/* Adjusts font size responsively for different screen widths */
+@media screen and (max-width: 1680px) {
+	body, input, select, textarea {
+		font-size: 13pt;
+	}
+}
+@media screen and (max-width: 1280px) {
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+}
+@media screen and (max-width: 360px) {
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
 }
 
-/* === BUTTON STYLE === */
-.button {
-  border: solid 1px rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.button.primary {
-  background-color: #ffffff;
-  color: #312450 !important;
-}
-
-/* === SECTION SPACING === */
-.wrapper > .inner {
-  padding: 4em 4em 2em 4em;
-  max-width: 75em;
-}
-
-/* === SIDEBAR LINK COLORS === */
-#sidebar nav a {
-  color: rgba(255, 255, 255, 0.35);
-}
-#sidebar nav a.active {
-  color: #ffffff;
-}
-
-/* === BACKGROUND IMAGE SECTION (Landing page) === */
-#intro {
-  background-image: url("images/intro.svg");
-  background-size: cover;
-  background-position: top right;
-}
-
-/* === OPTIONAL: REMOVE ANIMATIONS === */
-body.is-preload * {
-  transition: none !important;
-  animation: none !important;
-}
+/* Styles
