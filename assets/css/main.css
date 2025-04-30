@@ -115,7 +115,7 @@ html {
 
 /* Sets the main background color of the page to gold () */
 body {
-	background: #f9f9f9; /* Edit this to change the overall page background */
+	background: #1f2937; /* Edit this to change the overall page background */
 }
 
 /* Disables animations and transitions during page preload for a smooth initial load */
@@ -1540,25 +1540,25 @@ table.alt tfoot {
 }
 /* Sets background colors for different wrapper styles */
 .wrapper.alt {
-	background-color: #f9f9f9; /* Edit this for alt wrapper background (e.g., "About Me") */
+	background-color: #1f2937; /* Edit this for alt wrapper background (e.g., "About Me") */
 }
 .wrapper.style1 {
-	background-color: #f9f9f9; /* Edit this for style1 background */
+	background-color: #1f2937; /* Edit this for style1 background */
 }
 .wrapper.style1-alt {
-	background-color: #f9f9f9; /* Edit this for style1-alt background */
+	background-color: #1f2937; /* Edit this for style1-alt background */
 }
 .wrapper.style2 {
-	background-color: #f9f9f9; /* Edit this for style2 background */
+	background-color: #1f2937; /* Edit this for style2 background */
 }
 .wrapper.style2-alt {
-	background-color: #f9f9f9; /* Edit this for style2-alt background */
+	background-color: #1f2937; /* Edit this for style2-alt background */
 }
 .wrapper.style3 {
-	background-color: #f9f9f9; /* Edit this for style3 background */
+	background-color: #1f2937; /* Edit this for style3 background */
 }
 .wrapper.style3-alt {
-	background-color: #f9f9f9; /* Edit this for style3-alt background */
+	background-color: #1f2937; /* Edit this for style3-alt background */
 }
 /* Styles full-screen wrappers for hero sections */
 .wrapper.fullscreen {
