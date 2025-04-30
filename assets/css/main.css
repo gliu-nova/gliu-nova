@@ -1,163 +1,176 @@
-/* Reset default styles for consistency */
-html, body, div, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-}
+/*
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-/* Basic body styling */
-body {
-    background: #F5F7FA; /* Soft White - Main page background */
-    color: #333333; /* Charcoal Gray - Default text color */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
-    line-height: 1.75;
-}
+/* Basic */
 
-/* Links (e.g., YouTube, Twitter, LinkedIn) */
-a {
-    color: #FF6B6B; /* Vibrant Coral - Link color */
-    text-decoration: none;
-    border-bottom: dotted 1px #FF6B6B;
-}
+	html, body { /* Overall page setup: font, background */
+		height: 100%;
+	}
 
-a:hover {
-    color: #F4A261; /* Golden Yellow - Link hover color */
-    border-bottom-color: transparent;
-}
+	body { /* More body styles */
+		background: #000; /* Default background color */
+		color: #fff; /* Default text color */
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.65;
+		overflow-x: hidden;
+		-webkit-text-size-adjust: none;
+	}
 
-/* Headings */
-h1, h2, h3 {
-    color: #1A3C34; /* Deep Teal - Heading color */
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after { /* Styles applied during page load */
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 
-h1 { font-size: 2.5em; } /* Your name in intro */
-h2 { font-size: 1.75em; } /* Section titles (e.g., "Featured Work") */
-h3 { font-size: 1.1em; } /* Subheadings in sections */
+/* Layout */
 
-/* Paragraphs */
-p {
-    margin-bottom: 2em;
-}
+	#sidebar { /* The left sidebar */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 40%; /* Adjust sidebar width here */
+		height: 100%;
+		overflow: auto;
+		text-align: right;
+		padding: 3rem 3rem 0 0; /* Spacing inside the sidebar */
+		background: #2b2b2b; /* Sidebar background color */
+		color: #fff; /* Sidebar text color */
+		/* ... other sidebar positioning and styling ... */
+	}
 
-/* Sidebar (Left navigation: Welcome, Featured Work, Services, About Me) */
-#sidebar {
-    background: #1A3C34; /* Deep Teal - Sidebar background */
-    color: #FFFFFF; /* White - Sidebar text color */
-    width: 18em;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 2.5em;
-    text-align: right;
-}
+		#sidebar .inner { /* Content inside the sidebar */
+			/* ... spacing and alignment ... */
+		}
 
-#sidebar a {
-    color: #FFFFFF; /* White - Sidebar link color */
-    font-size: 0.6em;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 1.35em 0;
-    display: block;
-}
+		#sidebar nav ul { /* Sidebar navigation list */
+			/* ... list styling ... */
+		}
 
-#sidebar a:hover {
-    color: #FF6B6B; /* Vibrant Coral - Sidebar link hover color */
-}
+			#sidebar nav ul li a { /* Sidebar navigation links */
+				/* ... link styling, including color ... */
+			}
 
-/* Main content wrapper (Shifts content to the right of the sidebar) */
-#wrapper {
-    margin-left: 18em;
-}
+				#sidebar nav ul li a.active { /* Style for the active link */
+					/* ... active link color ... */
+				}
 
-/* Intro section (Your name, bio, photo) */
-#intro {
-    background: #F5F7FA; /* Soft White - Intro background */
-    padding: 5em;
-}
+	#wrapper { /* The main content area (to the right of the sidebar) */
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%; /* Adjust main content width here */
+		min-height: 100%;
+		background: #000; /* Main content background color */
+		/* ... other styling ... */
+	}
 
-#intro h1 {
-    color: #FF6B6B; /* Vibrant Coral - Your name color */
-}
+		#wrapper > .wrapper { /* Inner wrappers for sections */
+			/* ... padding and layout ... */
+		}
 
-#intro p {
-    color: #333333; /* Charcoal Gray - Bio text color */
-}
+/* Sections */
 
-/* Featured Work section (Spotlights layout) */
-#one.spotlights > section {
-    display: flex;
-    background: #F5F7FA; /* Soft White - Section background */
-}
+	.wrapper { /* Base styles for sections */
+		/* ... padding ... */
+	}
 
-#one .image img {
-    width: 25em;
-    height: auto;
-}
+		.wrapper.style1 { /* Style for sections with class "style1" (e.g., Intro, Three) */
+			background-color: #3b3b3b; /* Background color for style1 sections */
+			color: rgba(255, 255, 255, 0.75); /* Text color for style1 sections */
+		}
 
-#one .content {
-    padding: 4em 5em;
-}
+			.wrapper.style1 h1,
+			.wrapper.style1 h2,
+			.wrapper.style1 h3,
+			.wrapper.style1 h4,
+			.wrapper.style1 h5,
+			.wrapper.style1 h6 { /* Headings in style1 sections */
+				color: #fff; /* Heading color for style1 sections */
+			}
 
-/* Services section (Features layout) */
-#two {
-    background: #1A3C34; /* Deep Teal - Section background */
-    color: #FFFFFF; /* White - Text color */
-    padding: 5em;
-}
+		.wrapper.style2 { /* Style for sections with class "style2" (e.g., One) */
+			background-color: #2b2b2b; /* Background color for style2 sections */
+			color: rgba(255, 255, 255, 0.75); /* Text color for style2 sections */
+		}
 
-#two .features section {
-    padding: 3.5em 3em 1em 7em;
-    width: 50%;
-    position: relative;
-}
+			.wrapper.style2 h1,
+			.wrapper.style2 h2,
+			.wrapper.style2 h3,
+			.wrapper.style2 h4,
+			.wrapper.style2 h5,
+			.wrapper.style2 h6 { /* Headings in style2 sections */
+				color: #fff; /* Heading color for style2 sections */
+			}
 
-#two .features .image img {
-    width: 100%;
-    height: auto;
-}
+		.wrapper.style3 { /* Style for sections with class "style3" (e.g., Two) */
+			background-color: #000; /* Background color for style3 sections */
+			color: rgba(255, 255, 255, 0.75); /* Text color for style3 sections */
+		}
 
-/* About Me section */
-#three {
-    background: #F5F7FA; /* Soft White - Section background */
-    padding: 5em;
-}
+			.wrapper.style3 h1,
+			.wrapper.style3 h2,
+			.wrapper.style3 h3,
+			.wrapper.style3 h4,
+			.wrapper.style3 h5,
+			.wrapper.style3 h6 { /* Headings in style3 sections */
+				color: #fff; /* Heading color for style3 sections */
+			}
 
-/* Footer */
-#footer {
-    background: #1A3C34; /* Deep Teal - Footer background */
-    color: #FFFFFF; /* White - Footer text color */
-    padding: 2em;
-}
+		.wrapper.fullscreen { /* Style for fullscreen sections (e.g., Intro) */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
 
-#footer a {
-    color: #FF6B6B; /* Vibrant Coral - Footer link color */
-}
+/* Elements */
 
-#footer a:hover {
-    color: #F4A261; /* Golden Yellow - Footer link hover color */
-}
+	h1.major { /* Main headings */
+		/* ... font size, weight, etc. ... */
+		color: #fff; /* Main heading color */
+	}
 
-/* Buttons (e.g., "See more below", "Contact me") */
-.button {
-    background-color: #FF6B6B; /* Vibrant Coral - Button background */
-    color: #FFFFFF !important; /* White - Button text */
-    border: none;
-    border-radius: 3em;
-    padding: 0 3.75em;
-    font-size: 0.6em;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 4.75em;
-    display: inline-block;
-    text-decoration: none;
-}
+	/* ... styles for other HTML elements like <p>, <a>, <ul>, <form>, etc. ... */
 
-.button:hover {
-    background-color: #F4A261; /* Golden Yellow - Button hover background */
-}
+/* Components */
+
+	/* ... styles for specific components like buttons, images, icons, etc. ... */
+
+/* Layout Modifiers */
+
+	/* ... styles that modify the layout in certain situations ... */
+
+/* Breakpoints */
+
+	@media screen and (max-width: 1680px) { /* Styles for smaller desktops */
+		/* ... adjustments for smaller screens ... */
+	}
+
+	@media screen and (max-width: 1280px) { /* Styles for tablets */
+		/* ... significant layout changes for tablets ... */
+	}
+
+	@media screen and (max-width: 980px) { /* Styles for smaller tablets */
+		/* ... more layout adjustments ... */
+	}
+
+	@media screen and (max-width: 736px) { /* Styles for phones */
+		/* ... major layout changes for phones, often stacking elements ... */
+	}
+
+	@media screen and (max-width: 480px) { /* Styles for smaller phones */
+		/* ... further adjustments for smaller phone screens ... */
+	}
