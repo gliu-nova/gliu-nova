@@ -2005,3 +2005,102 @@ body.is-preload #sidebar nav ul li {
 		background-attachment: scroll; /* Switches to scrolling background */
 	}
 }
+
+/* Extra grok code to fix formatting 
+ */
+
+/* Ensure the wrapper and inner containers don't clip content */
+.wrapper {
+    width: 100%;                /* Full width */
+    overflow: visible;          /* Prevent clipping */
+}
+
+.wrapper > .inner {
+    width: 100%;                /* Full width */
+    max-width: 100%;            /* Override the default 75em width */
+    box-sizing: border-box;     /* Include padding in width */
+}
+
+/* Fix sidebar and wrapper interaction */
+#sidebar + #wrapper {
+    margin-left: 18em;          /* Match sidebar width */
+    width: calc(100% - 18em);   /* Adjust width to fit beside sidebar */
+}
+
+/* Single-column layout for contact section */
+.contact-section {
+    width: 100%;                /* Full width */
+    box-sizing: border-box;     /* Include padding in width */
+}
+
+.contact-form, .contact-info {
+    width: 100%;                /* Full width */
+    margin-bottom: 2em;         /* Space between form and contact info */
+    box-sizing: border-box;     /* Include padding in width */
+    padding: 1em;               /* Add padding to prevent content from touching edges */
+}
+
+/* Fix form fields to prevent overflow */
+.fields {
+    display: flex;
+    flex-wrap: wrap;           /* Wrap fields if needed */
+}
+
+.field.half {
+    width: 50%;                /* Half width for name/email fields */
+    box-sizing: border-box;
+    padding: 0 0.5em;          /* Add padding to prevent overlap */
+}
+
+.field {
+    width: 100%;               /* Full width for message field */
+    box-sizing: border-box;
+    padding: 0 0.5em;          /* Add padding */
+}
+
+input, textarea {
+    width: 100%;               /* Ensure inputs fit container */
+    box-sizing: border-box;
+}
+
+/* Allow long text to wrap */
+.contact a, .contact span {
+    word-break: break-all;     /* Break long words like emails */
+}
+
+/* Reset zoom or transform effects */
+.fade-up {
+    transform: none !important; /* Reset any scaling or translation */
+}
+
+.fade-up > .inner {
+    transform: none !important; /* Reset transform on inner */
+    opacity: 1 !important;     /* Ensure content is visible */
+}
+
+/* Specifically target #three to ensure visibility */
+#three {
+    overflow: visible !important; /* Prevent clipping */
+    width: 100%;                 /* Full width */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1280px) {
+    #sidebar + #wrapper {
+        margin-left: 0;          /* Remove sidebar margin */
+        width: 100%;             /* Full width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .field.half {
+        width: 100%;             /* Stack form fields vertically on small screens */
+        padding: 0;              /* Reset padding */
+    }
+    .field {
+        padding: 0;              /* Reset padding */
+    }
+    .contact-form, .contact-info {
+        padding: 0;              /* Reduce padding on small screens */
+    }
+}
