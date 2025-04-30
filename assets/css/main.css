@@ -1,104 +1,163 @@
-/* Simplified main CSS for your GitHub website (colors + layout only) */
-
-/* GLOBAL RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset default styles for consistency */
+html, body, div, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
 }
 
+/* Basic body styling */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  background-color: #1a1a1a; /* Overall background color */
-  color: #f0f0f0;
+    background: #F5F7FA; /* Soft White - Main page background */
+    color: #333333; /* Charcoal Gray - Default text color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    line-height: 1.75;
 }
 
-/* HEADER */
-#header {
-  background-color: #202040; /* Change this to alter top nav background */
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Links (e.g., YouTube, Twitter, LinkedIn) */
+a {
+    color: #FF6B6B; /* Vibrant Coral - Link color */
+    text-decoration: none;
+    border-bottom: dotted 1px #FF6B6B;
 }
 
-#header .title {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: white;
+a:hover {
+    color: #F4A261; /* Golden Yellow - Link hover color */
+    border-bottom-color: transparent;
 }
 
-#header nav a {
-  color: #ccc;
-  text-decoration: none;
-  margin-left: 1rem;
+/* Headings */
+h1, h2, h3 {
+    color: #1A3C34; /* Deep Teal - Heading color */
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
-#header nav a:hover {
-  color: white;
+h1 { font-size: 2.5em; } /* Your name in intro */
+h2 { font-size: 1.75em; } /* Section titles (e.g., "Featured Work") */
+h3 { font-size: 1.1em; } /* Subheadings in sections */
+
+/* Paragraphs */
+p {
+    margin-bottom: 2em;
 }
 
-/* SIDEBAR */
+/* Sidebar (Left navigation: Welcome, Featured Work, Services, About Me) */
 #sidebar {
-  background-color: #12122f; /* Left panel background */
-  padding: 2rem;
-  color: white;
+    background: #1A3C34; /* Deep Teal - Sidebar background */
+    color: #FFFFFF; /* White - Sidebar text color */
+    width: 18em;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2.5em;
+    text-align: right;
 }
 
-#sidebar nav a {
-  color: #bbb;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  text-decoration: none;
-  display: block;
-  margin: 1rem 0;
+#sidebar a {
+    color: #FFFFFF; /* White - Sidebar link color */
+    font-size: 0.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1.35em 0;
+    display: block;
 }
 
-#sidebar nav a:hover {
-  color: white;
+#sidebar a:hover {
+    color: #FF6B6B; /* Vibrant Coral - Sidebar link hover color */
 }
 
-/* SECTIONS (change wrapper colors) */
-.wrapper {
-  padding: 3rem 2rem;
+/* Main content wrapper (Shifts content to the right of the sidebar) */
+#wrapper {
+    margin-left: 18em;
 }
 
-.wrapper.style1 {
-  background-color: #1a1a1a;
+/* Intro section (Your name, bio, photo) */
+#intro {
+    background: #F5F7FA; /* Soft White - Intro background */
+    padding: 5em;
 }
 
-.wrapper.style2 {
-  background-color: #2a2a40;
+#intro h1 {
+    color: #FF6B6B; /* Vibrant Coral - Your name color */
 }
 
-.wrapper.style3 {
-  background-color: #333350; /* Was pink (#b74e91) */
+#intro p {
+    color: #333333; /* Charcoal Gray - Bio text color */
 }
 
-.wrapper.alt {
-  background-color: #101010;
+/* Featured Work section (Spotlights layout) */
+#one.spotlights > section {
+    display: flex;
+    background: #F5F7FA; /* Soft White - Section background */
 }
 
-/* IMAGE */
-.image img {
-  max-width: 100%;
-  border-radius: 0.5rem;
+#one .image img {
+    width: 25em;
+    height: auto;
 }
 
-/* BUTTON */
+#one .content {
+    padding: 4em 5em;
+}
+
+/* Services section (Features layout) */
+#two {
+    background: #1A3C34; /* Deep Teal - Section background */
+    color: #FFFFFF; /* White - Text color */
+    padding: 5em;
+}
+
+#two .features section {
+    padding: 3.5em 3em 1em 7em;
+    width: 50%;
+    position: relative;
+}
+
+#two .features .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Me section */
+#three {
+    background: #F5F7FA; /* Soft White - Section background */
+    padding: 5em;
+}
+
+/* Footer */
+#footer {
+    background: #1A3C34; /* Deep Teal - Footer background */
+    color: #FFFFFF; /* White - Footer text color */
+    padding: 2em;
+}
+
+#footer a {
+    color: #FF6B6B; /* Vibrant Coral - Footer link color */
+}
+
+#footer a:hover {
+    color: #F4A261; /* Golden Yellow - Footer link hover color */
+}
+
+/* Buttons (e.g., "See more below", "Contact me") */
 .button {
-  background-color: white;
-  color: black;
-  padding: 0.75em 1.5em;
-  border-radius: 2em;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75rem;
+    background-color: #FF6B6B; /* Vibrant Coral - Button background */
+    color: #FFFFFF !important; /* White - Button text */
+    border: none;
+    border-radius: 3em;
+    padding: 0 3.75em;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4.75em;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .button:hover {
-  background-color: #eee;
-  color: #000;
+    background-color: #F4A261; /* Golden Yellow - Button hover background */
 }
