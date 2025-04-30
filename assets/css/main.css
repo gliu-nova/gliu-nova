@@ -1785,7 +1785,7 @@ body.is-preload .wrapper.fade > .inner {
 /* Styles the fixed sidebar with a dark purple background */
 #sidebar {
 	padding: 2.5em 2.5em 0.5em 2.5em; /* Edit this for sidebar padding */
-	background: #D1D5DB; /* Edit this to change sidebar background */
+	background: #374151; /* Edit this to change sidebar background */
 	cursor: default;
 	height: 100vh;
 	left: 0;
